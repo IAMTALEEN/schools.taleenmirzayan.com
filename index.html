@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>French Immersion & Neighbourhood School Guide | Taleen Mirzayan, Broker · RE/MAX Professionals Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-greige: #b8afaa;
+      --brand-mauve: #a2989b;
+      --brand-deep:  #6b605d;
+      --brand-cream: #faf7f4;
+      --brand-ink:   #2a2326;
+      --brand-line:  #e8e2de;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Raleway', 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--brand-cream);
+      color: var(--brand-ink);
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    /* ── Brand Header ── */
+    .brand-bar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--brand-line);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand-bar .logo-block { display: flex; align-items: center; gap: 14px; }
+    .brand-bar .logo-block img { height: 56px; width: auto; display: block; }
+    .brand-bar .agent-block { text-align: right; font-size: 0.78rem; line-height: 1.5; color: var(--brand-deep); letter-spacing: 0.02em; }
+    .brand-bar .agent-block strong { display: block; font-weight: 700; font-size: 0.9rem; color: var(--brand-ink); letter-spacing: 0.04em; }
+    .brand-bar .agent-block a { color: var(--brand-deep); text-decoration: none; }
+    .brand-bar .agent-block a:hover { color: var(--brand-ink); text-decoration: underline; }
+
+    header {
+      background: linear-gradient(135deg, var(--brand-greige) 0%, var(--brand-mauve) 100%);
+      color: #fff;
+      padding: 56px 24px 44px;
+      text-align: center;
+    }
+    header .subtitle {
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 0.95;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    header h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    header p  { font-size: 0.9rem; color: #fff; opacity: 0.95; max-width: 760px; margin: 0 auto; font-weight: 400; letter-spacing: 0.02em; }
+
+    /* ── Filter Bar ── */
+    .filter-bar {
+      background: #fff;
+      border-bottom: 1px solid var(--brand-line);
+      padding: 16px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: flex-end;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(107,96,93,0.08);
+    }
+    .filter-bar .filter-group { display: flex; flex-direction: column; gap: 4px; }
+    .filter-bar label { font-size: 0.68rem; font-weight: 700; color: var(--brand-deep); text-transform: uppercase; letter-spacing: 0.08em; font-family: 'Raleway', sans-serif; }
+    .filter-bar select, .filter-bar input[type="text"] {
+      padding: 8px 12px;
+      border: 1px solid var(--brand-line);
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-family: 'Raleway', sans-serif;
+      background: #fff;
+      color: var(--brand-ink);
+      min-width: 170px;
+    }
+    .filter-bar select:focus, .filter-bar input:focus {
+      outline: none;
+      border-color: var(--brand-mauve);
+      box-shadow: 0 0 0 2px rgba(162,152,155,0.2);
+    }
+    .btn-reset {
+      padding: 9px 18px;
+      background: var(--brand-ink);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-family: 'Raleway', sans-serif;
+    }
+    .btn-reset:hover { background: var(--brand-deep); }
+
+    /* ── Main Layout ── */
+    main { max-width: 1280px; margin: 0 auto; padding: 32px 20px 60px; }
+
+    /* ── Legend ── */
+    .legend {
+      background: #fff;
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin-bottom: 22px;
+      border: 1px solid var(--brand-line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+    .legend h3 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--brand-deep); margin-right: 6px; font-weight: 700; }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; color: var(--brand-ink); }
+    .legend-dot { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
+
+    /* ── Section Headers ── */
+    .region-header {
+      margin: 40px 0 18px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--brand-greige);
+    }
+    .region-header h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: var(--brand-ink);
+      letter-spacing: 0.01em;
+    }
+    .region-header .board-tag {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: var(--brand-cream);
+      color: var(--brand-deep);
+      border: 1px solid var(--brand-line);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .region-header p { font-size: 0.85rem; color: var(--brand-deep); margin-top: 8px; font-weight: 400; }
+
+    /* ── Card Grid ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    /* ── School Card ── */
+    .school-card {
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid var(--brand-line);
+      box-shadow: 0 1px 4px rgba(107,96,93,0.04);
+      overflow: hidden;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .school-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(107,96,93,0.14);
+    }
+    .school-card.hidden { display: none; }
+
+    /* Card colour stripe by board */
+    .card-top { height: 6px; }
+    .board-public .card-top      { background: #1967d2; }
+    .board-catholic .card-top    { background: #d93025; }
+    .board-fr-public .card-top   { background: #188038; }
+    .board-fr-catholic .card-top { background: #0f9d58; }
+    .board-private .card-top     { background: #c9a84c; }
+
+    .card-body { padding: 18px 18px 14px; flex: 1; }
+    .card-body .school-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.18rem;
+      font-weight: 600;
+      color: var(--brand-ink);
+      margin-bottom: 4px;
+      line-height: 1.25;
+    }
+    .card-body .school-nbhd {
+      font-size: 0.72rem;
+      color: var(--brand-deep);
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /* Tags row */
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 12px; }
+    .tag {
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+    .tag-public    { background: #e8f0fe; color: #1967d2; }
+    .tag-catholic  { background: #fce8e6; color: #d93025; }
+    .tag-fr-pub    { background: #e6f4ea; color: #188038; }
+    .tag-fr-cath   { background: #d7f0df; color: #0b7a3e; }
+    .tag-private   { background: #fef7e0; color: #b06000; }
+    .tag-fi        { background: #f3e8fd; color: #7b2fbe; }
+    .tag-full-fr   { background: #e6f4ea; color: #188038; }
+    .tag-english   { background: #eceff1; color: #455a64; }
+    .tag-ib        { background: #e0f7fa; color: #00838f; }
+    .tag-arts      { background: #fff3e0; color: #e65100; }
+    .tag-gifted    { background: #fce4ec; color: #c2185b; }
+    .tag-special   { background: #f1f8e9; color: #558b2f; }
+
+    /* Info rows */
+    .info-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #444;
+      margin-bottom: 4px;
+    }
+    .info-row .label { font-weight: 600; color: var(--brand-deep); min-width: 78px; flex-shrink: 0; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.05em; }
+    .info-row .value { flex: 1; color: var(--brand-ink); }
+
+    /* Fraser badge */
+    .fraser-row { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
+    .fraser-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+    .fraser-na   { background: #f0ede9; color: var(--brand-deep); }
+    .fraser-low  { background: #f3e6e3; color: #a14233; }
+    .fraser-med  { background: #f5ecd9; color: #8a6a1f; }
+    .fraser-good { background: #e4ede0; color: #3d5a2a; }
+    .fraser-top  { background: var(--brand-ink); color: var(--brand-greige); }
+
+    /* EQAO scores */
+    .eqao {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--brand-line);
+      font-size: 0.76rem;
+      color: var(--brand-deep);
+    }
+    .eqao-label {
+      font-size: 0.64rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--brand-deep);
+      letter-spacing: 0.12em;
+      margin-bottom: 4px;
+    }
+    .eqao-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    .eqao-grade { font-weight: 600; color: var(--brand-ink); }
+    .eqao-scores { color: var(--brand-deep); font-variant-numeric: tabular-nums; }
+
+    /* Notes */
+    .card-notes {
+      background: var(--brand-cream);
+      border-top: 1px solid var(--brand-line);
+      padding: 10px 18px;
+      font-size: 0.78rem;
+      color: var(--brand-ink);
+      line-height: 1.55;
+    }
+    .card-notes .star { color: var(--brand-mauve); margin-right: 3px; }
+
+    /* Card links */
+    .card-links {
+      padding: 10px 18px 14px;
+      display: flex;
+      gap: 14px;
+      font-size: 0.76rem;
+      border-top: 1px solid var(--brand-line);
+    }
+    .card-links a {
+      color: var(--brand-deep);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .card-links a:hover { color: var(--brand-ink); text-decoration: underline; }
+
+    /* ── Notice banner ── */
+    .notice {
+      background: var(--brand-cream);
+      border-left: 3px solid var(--brand-greige);
+      padding: 14px 18px;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.85rem;
+      color: var(--brand-ink);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .notice + .notice { margin-top: 0; }
+    .notice.info {
+      background: #f3eff0;
+      border-left-color: var(--brand-mauve);
+      color: var(--brand-ink);
+    }
+    .notice strong { color: var(--brand-ink); font-weight: 700; }
+
+    /* ── No results ── */
+    #no-results {
+      display: none;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--brand-deep);
+      font-size: 1rem;
+    }
+
+    /* ── Compliance / Disclaimer blocks ── */
+    .compliance-section {
+      background: #fff;
+      border: 1px solid var(--brand-line);
+      border-radius: 6px;
+      padding: 28px 32px;
+      margin: 40px 0 24px;
+    }
+    .compliance-section h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--brand-ink);
+      margin-bottom: 4px;
+    }
+    .compliance-section .eyebrow {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--brand-mauve);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .compliance-section p { font-size: 0.85rem; color: var(--brand-ink); margin-bottom: 10px; line-height: 1.65; }
+    .compliance-section ul { font-size: 0.85rem; color: var(--brand-ink); margin: 8px 0 10px 22px; line-height: 1.65; }
+    .compliance-section ul li { margin-bottom: 4px; }
+    .compliance-section .legal {
+      font-size: 0.76rem;
+      color: var(--brand-deep);
+      background: var(--brand-cream);
+      padding: 14px 16px;
+      border-radius: 4px;
+      margin-top: 14px;
+      line-height: 1.6;
+      font-style: italic;
+      border-left: 2px solid var(--brand-greige);
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--brand-ink);
+      color: #d4cdc9;
+      padding: 40px 24px 28px;
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+    .footer-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(184,175,170,0.2);
+    }
+    .footer-grid .col-agent { display: flex; align-items: flex-start; gap: 18px; }
+    .footer-grid .col-agent img { height: 72px; width: auto; filter: invert(1) brightness(1.3); opacity: 0.95; }
+    .footer-grid h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    .footer-grid .eyebrow {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--brand-greige);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .footer-grid p { font-size: 0.78rem; color: #d4cdc9; line-height: 1.65; }
+    .footer-grid a { color: var(--brand-greige); text-decoration: none; }
+    .footer-grid a:hover { color: #fff; text-decoration: underline; }
+    .footer-sources {
+      max-width: 1280px;
+      margin: 18px auto 0;
+      font-size: 0.72rem;
+      color: #9c928e;
+      text-align: center;
+      line-height: 1.7;
+    }
+    .footer-sources a { color: var(--brand-greige); text-decoration: none; }
+
+    @media (max-width: 720px) {
+      header h1 { font-size: 1.6rem; }
+      .brand-bar { flex-direction: column; text-align: center; gap: 10px; }
+      .brand-bar .agent-block { text-align: center; }
+      .card-grid { grid-template-columns: 1fr; }
+      .filter-bar select, .filter-bar input[type="text"] { min-width: 140px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-grid .col-agent { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Brand Bar -->
+<div class="brand-bar">
+  <div class="logo-block">
+    <img src="logo-primary.svg" alt="Taleen Mirzayan" />
+  </div>
+  <div class="agent-block">
+    <strong>Taleen Mirzayan</strong>
+    Broker · RE/MAX Professionals Inc., Brokerage<br>
+    <a href="tel:4169856160">416.985.6160</a> · <a href="https://taleenmirzayan.com" target="_blank" rel="noopener">taleenmirzayan.com</a> · <a href="https://instagram.com/iamtaleen_" target="_blank" rel="noopener">@iamtaleen_</a>
+  </div>
+</div>
+
+<header>
+  <p class="subtitle">A Relocation Resource</p>
+  <h1>French Immersion &amp; Neighbourhood School Guide</h1>
+  <p>Port Credit · Mineola · Lakeview · Long Branch · Mimico · Alderwood · New Toronto · Mimico-Queensway · Richmond Gardens · Royal York Gardens · Princess–Rosethorn</p>
+</header>
+
+<!-- Filter Bar -->
+<div class="filter-bar">
+  <div class="filter-group">
+    <label for="filter-nbhd">Neighbourhood</label>
+    <select id="filter-nbhd" onchange="applyFilters()">
+      <option value="all">All Neighbourhoods</option>
+      <optgroup label="Mississauga">
+        <option value="Port Credit">Port Credit</option>
+        <option value="Mineola">Mineola</option>
+        <option value="Lakeview">Lakeview</option>
+      </optgroup>
+      <optgroup label="South Etobicoke">
+        <option value="Long Branch">Long Branch</option>
+        <option value="Mimico">Mimico</option>
+        <option value="Alderwood">Alderwood</option>
+        <option value="New Toronto">New Toronto</option>
+        <option value="Mimico-Queensway">Mimico-Queensway</option>
+      </optgroup>
+      <optgroup label="Central Etobicoke">
+        <option value="Richmond Gardens">Richmond Gardens</option>
+        <option value="Royal York Gardens">Royal York Gardens</option>
+        <option value="Princess-Rosethorn">Princess–Rosethorn</option>
+      </optgroup>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="filter-board">Board / Type</label>
+    <select id="filter-board" onchange="applyFilters()">
+      <option value="all">All Types</option>
+      <option value="public">Public (TDSB / PDSB)</option>
+      <option value="catholic">Catholic (TCDSB / DPCDSB)</option>
+      <option value="fr-public">Public French-Language (Viamonde)</option>
+      <option value="fr-catholic">Catholic French-Language (MonAvenir)</option>
+      <option value="private">Private</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="filter-program">Program</label>
+    <select id="filter-program" onchange="applyFilters()">
+      <option value="all">All Programs</option>
+      <option value="fi">French Immersion</option>
+      <option value="full-fr">Full French-Language</option>
+      <option value="english">English Track / Regular</option>
+      <option value="ib">IB / International Bacc.</option>
+      <option value="arts">Arts / Specialty</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="filter-fraser">Min. Fraser Rating</label>
+    <select id="filter-fraser" onchange="applyFilters()">
+      <option value="0">Any rating</option>
+      <option value="5">5.0 or higher</option>
+      <option value="6">6.0 or higher</option>
+      <option value="7">7.0 or higher</option>
+      <option value="8">8.0 or higher</option>
+      <option value="9">9.0 or higher</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="filter-search">Search</label>
+    <input type="text" id="filter-search" placeholder="School name…" oninput="applyFilters()" />
+  </div>
+  <button class="btn-reset" onclick="resetFilters()">Reset</button>
+</div>
+
+<main>
+
+  <!-- Legend -->
+  <div class="legend">
+    <h3>Legend</h3>
+    <div class="legend-item"><span class="legend-dot" style="background:#1967d2"></span>Public</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#d93025"></span>Catholic</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#188038"></span>Public French-Lang.</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#0f9d58"></span>Catholic French-Lang.</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#c9a84c"></span>Private</div>
+    <div class="legend-item"><span class="fraser-badge fraser-top">★ Top (9–10)</span></div>
+    <div class="legend-item"><span class="fraser-badge fraser-good">Good (7–8.9)</span></div>
+    <div class="legend-item"><span class="fraser-badge fraser-med">Average (5–6.9)</span></div>
+    <div class="legend-item"><span class="fraser-badge fraser-low">Below (&lt;5)</span></div>
+  </div>
+
+  <!-- BC Family notice -->
+  <div class="notice info">
+    🛬 <strong>For families relocating from BC:</strong> French Immersion entry ages differ by board.
+    <ul style="margin:6px 0 0 22px; padding:0;">
+      <li><strong>Peel (PDSB/DPCDSB)</strong> — Mississauga: FI entry is <strong>Grade 1</strong>, apply in <strong>January</strong>. Lottery selection; siblings no priority.</li>
+      <li><strong>Toronto (TDSB/TCDSB)</strong> — Etobicoke: Early FI entry is <strong>Senior Kindergarten (SK)</strong> / JK, apply in <strong>early–late November</strong>. On-time applicants guaranteed a program spot (not a specific school). Middle FI Gr 4 entry applies in January.</li>
+      <li><strong>French-language schools</strong> (Viamonde, MonAvenir) require <strong>Section 23 Charter eligibility</strong> — one parent educated in French in Canada, or an eligible sibling. Ideal if a parent is already francophone.</li>
+    </ul>
+  </div>
+
+  <div class="notice">
+    ⚠️ Catchments, entry grades, and program availability change annually. Verify your home address via <a href="https://www.peelschools.org/find-my-school" target="_blank" rel="noopener">PDSB Find My School</a>, <a href="https://www.tdsb.on.ca/FindYourSchool" target="_blank" rel="noopener">TDSB Find Your School</a>, <a href="https://www.dpcdsb.org" target="_blank" rel="noopener">DPCDSB</a>, and <a href="https://www.tcdsb.org" target="_blank" rel="noopener">TCDSB</a> before making any enrolment decisions.
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- REGION 1: MISSISSAUGA — Port Credit / Mineola / Lakeview -->
+  <!-- ====================================================== -->
+  <section>
+    <div class="region-header">
+      <h2>Mississauga — Port Credit · Mineola · Lakeview <span class="board-tag">PDSB &amp; DPCDSB</span></h2>
+      <p>PDSB French Immersion is regional and lottery-based, entering at Grade 1. No DPCDSB French Immersion school exists in south Mississauga — closest sites are 12–18 km away in west Mississauga, with no busing.</p>
+    </div>
+    <div class="card-grid">
+
+      <!-- KENOLLIE PS -->
+      <div class="school-card board-public" data-nbhd="Mineola" data-board="public" data-program="fi english" data-level="Elementary" data-fraser="10">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Kenollie Public School ⭐</div>
+          <div class="school-nbhd">Mineola · 1376 Glenwood Drive, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-fi">French Immersion</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–6</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">Grade 1 (lottery)</span></div>
+          <div class="info-row"><span class="label">Dual-track:</span><span class="value">English stream is catchment-based</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-top">★ Fraser 10.0 / 10</span>
+            <span class="fraser-badge fraser-top">#1 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO (approx. combined)</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">~99% avg</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">~87% avg</span></div>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>#1 ranked elementary in all of Ontario. Small (~180 students), tight community feel south of the QEW. FI lottery extremely competitive.</div>
+        <div class="card-links">
+          <a href="https://kenollie.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+          <a href="https://ontarioschoolrankings.ca/schools/kenollie-mississauga" target="_blank" rel="noopener">Fraser profile →</a>
+        </div>
+      </div>
+
+      <!-- MINEOLA PS -->
+      <div class="school-card board-public" data-nbhd="Mineola" data-board="public" data-program="fi" data-level="Elementary" data-fraser="7.1">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Mineola Public School</div>
+          <div class="school-nbhd">Mineola · 145 Windy Oaks, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-fi">French Immersion</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–6 (FI Gr 1–6)</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">Grade 1 (lottery)</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">Queen Elizabeth Sr. PS or Hillcrest MS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 7.1 / 10</span>
+            <span class="fraser-badge fraser-good">#811 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 74 · W 74 · M 72</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 87 · W 85 · M 77</span></div>
+          </div>
+        </div>
+        <div class="card-notes">~300 students. Well-established FI hub in Mineola. ~10 min drive to Port Credit GO.</div>
+        <div class="card-links">
+          <a href="https://mineola.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+          <a href="https://ontarioschoolrankings.ca/schools/mineola-mississauga" target="_blank" rel="noopener">Fraser profile →</a>
+        </div>
+      </div>
+
+      <!-- RIVERSIDE PS -->
+      <div class="school-card board-public" data-nbhd="Port Credit" data-board="public" data-program="fi english" data-level="Elementary" data-fraser="6.3">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Riverside Public School</div>
+          <div class="school-nbhd">Port Credit · 30 John Street N, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-fi">French Immersion</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8 (FI Gr 1–5)</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">Grade 1 (lottery)</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">Queen Elizabeth Sr. PS (Gr 6–8 FI)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-med">Fraser ~6.3 / 10</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">~58 avg</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">Small cohort / suppressed</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Walking distance to Port Credit village &amp; Lake Ontario. ~5 min walk to Port Credit GO. Small school, community feel.</div>
+        <div class="card-links">
+          <a href="https://riverside.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- FOREST AVENUE PS -->
+      <div class="school-card board-public" data-nbhd="Port Credit" data-board="public" data-program="english" data-level="Elementary" data-fraser="3.9">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Forest Avenue Public School</div>
+          <div class="school-nbhd">Port Credit · 20 Forest Avenue, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–6</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">N/A (Core French from Gr 4)</span></div>
+          <div class="info-row"><span class="label">Catchment:</span><span class="value">Port Credit (home school)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-low">Fraser 3.9 / 10</span>
+            <span class="fraser-badge fraser-low">#2,657 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 58 · W 55 · M 50</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 52 · W 48 · M 40</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Designated home school for most of Port Credit. Many families opt to apply to Mineola PS or Riverside PS for FI instead. Walking distance to waterfront &amp; GO.</div>
+        <div class="card-links">
+          <a href="https://forestavenue.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- JANET I. MCDOUGALD PS -->
+      <div class="school-card board-public" data-nbhd="Mineola" data-board="public" data-program="english" data-level="Elementary" data-fraser="4.5">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Janet I. McDougald Public School</div>
+          <div class="school-nbhd">Mineola / Port Credit N · 498 Hartsdale Ave, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–5</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">N/A (apply to Mineola PS or Riverside PS)</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">Queen Elizabeth Sr. PS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-low">Fraser ~4–5 (est.)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R ~55 · W ~52 · M ~48</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">N/A (JK–5 only)</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Serves east Mineola / north Port Credit. Small, community feel. Renamed 2011.</div>
+        <div class="card-links">
+          <a href="https://janetimcdougald.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- QUEEN ELIZABETH SR. PS -->
+      <div class="school-card board-public" data-nbhd="Port Credit Mineola Lakeview" data-board="public" data-program="fi english arts" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Queen Elizabeth Senior Public School</div>
+          <div class="school-nbhd">South Mississauga · 60 South Service Rd, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-fi">FI Continuation</span>
+            <span class="tag tag-english">English Track</span>
+            <span class="tag tag-arts">Regional Arts</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">6–8 (senior school)</span></div>
+          <div class="info-row"><span class="label">Role:</span><span class="value">Main FI Gr 6–8 hub for Port Credit / Mineola</span></div>
+          <div class="info-row"><span class="label">Specialty:</span><span class="value">Regional Arts Program (audition)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (Gr 6–8)</span>
+          </div>
+        </div>
+        <div class="card-notes">Hosts the Regional Arts Program (visual arts, drama, music) and FI Gr 6–8 continuation. ~320 students. Near Port Credit GO.</div>
+        <div class="card-links">
+          <a href="https://queenelizabeth.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- HILLCREST MIDDLE -->
+      <div class="school-card board-public" data-nbhd="Mineola Lakeview" data-board="public" data-program="fi english" data-level="Elementary" data-fraser="8.3">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Hillcrest Middle School ⭐</div>
+          <div class="school-nbhd">Clarkson / Lorne Park · 1530 Springwell Ave, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-fi">FI Continuation</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">6–8</span></div>
+          <div class="info-row"><span class="label">Specialty:</span><span class="value">Communication Program</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">Lorne Park SS (top-ranked)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Rating ~8.3 (GTAWestLiving)</span>
+            <span class="fraser-badge fraser-top">#2 MS in Mississauga</span>
+          </div>
+        </div>
+        <div class="card-notes">55+ years of history. Dual English + FI. Relevant for Mineola/Lakeview families pursuing the Lorne Park secondary pathway.</div>
+        <div class="card-links">
+          <a href="https://hillcrest.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. JAMES CGLC -->
+      <div class="school-card board-catholic" data-nbhd="Port Credit Mineola Lakeview" data-board="catholic" data-program="english ib" data-level="Elementary" data-fraser="9.1">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. James Catholic Global Learning Centre ⭐</div>
+          <div class="school-nbhd">Port Credit · 98 Wanita Road, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-catholic">DPCDSB</span>
+            <span class="tag tag-ib">IB PYP</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">N/A (no FI; IB is separate)</span></div>
+          <div class="info-row"><span class="label">Specialty:</span><span class="value">IB Primary Years Programme (regional application)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-top">Fraser ~9.1 / 10</span>
+            <span class="fraser-badge fraser-top">Top 5%</span>
+          </div>
+        </div>
+        <div class="card-notes">IB World School — premium Catholic option for Port Credit families. Near GO and Port Credit village. Highly competitive IB application.</div>
+        <div class="card-links">
+          <a href="https://jamee.dpcdsb.org" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. TIMOTHY CES -->
+      <div class="school-card board-catholic" data-nbhd="Mineola Lakeview" data-board="catholic" data-program="english" data-level="Elementary" data-fraser="8.8">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Timothy Catholic Elementary ⭐</div>
+          <div class="school-nbhd">N. Mineola / Cooksville · 2214 Cliff Road, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-catholic">DPCDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">N/A</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">St. Paul CSS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 8.8 / 10</span>
+            <span class="fraser-badge fraser-top">#149 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">#162 of 1,224 GTA (top 13%)</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Among Mississauga's highest-rated Catholic elementary schools. Consistently strong academics.</div>
+        <div class="card-links">
+          <a href="https://www.dpcdsb.org/TIMOT" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- QUEEN OF HEAVEN CES -->
+      <div class="school-card board-catholic" data-nbhd="Lakeview Port Credit" data-board="catholic" data-program="english" data-level="Elementary" data-fraser="8.2">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Queen of Heaven Catholic Elementary</div>
+          <div class="school-nbhd">Lakeview · 1198 Alexandra Avenue, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-catholic">DPCDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">N/A</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">St. Paul CSS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 8.2 / 10</span>
+            <span class="fraser-badge fraser-good">#287 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO (2022–23)</div>
+            <div class="eqao-row"><span class="eqao-grade">Literacy</span><span class="eqao-scores">~83%</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Math</span><span class="eqao-scores">~58%</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Main Catholic home school for Lakeview south of Cawthra. Strong academic record, close to lakeshore.</div>
+        <div class="card-links">
+          <a href="https://www.dpcdsb.org/HEAVE" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. LUKE CES -->
+      <div class="school-card board-catholic" data-nbhd="Port Credit Mineola" data-board="catholic" data-program="english" data-level="Elementary" data-fraser="7.4">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Luke Catholic Elementary</div>
+          <div class="school-nbhd">Lorne Park / Port Credit W · 1280 Cobalt St, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-catholic">DPCDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">N/A</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">St. Paul CSS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 7.4 / 10</span>
+            <span class="fraser-badge fraser-good">#643 / 3,052</span>
+          </div>
+        </div>
+        <div class="card-notes">~355 students. Well-rated Catholic school serving Lorne Park / south Mineola.</div>
+        <div class="card-links">
+          <a href="https://www.dpcdsb.org/LUKEE" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. DOMINIC CES -->
+      <div class="school-card board-catholic" data-nbhd="Mineola" data-board="catholic" data-program="english" data-level="Elementary" data-fraser="6.1">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Dominic Catholic Elementary</div>
+          <div class="school-nbhd">Mineola · 515 Hartsdale Avenue, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-catholic">DPCDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">N/A</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">St. Paul CSS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-med">Fraser 6.1 / 10</span>
+            <span class="fraser-badge fraser-med">#1,495 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">Top ~100 of 1,224 GTA</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Main Catholic neighbourhood school for Mineola families.</div>
+        <div class="card-links">
+          <a href="https://domnc.dpcdsb.org" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ALLAN A. MARTIN SR PS -->
+      <div class="school-card board-public" data-nbhd="Lakeview" data-board="public" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Allan A. Martin Senior Public School</div>
+          <div class="school-nbhd">Lakeview · 1390 Ogden Avenue, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-public">PDSB</span>
+            <span class="tag tag-english">English Track</span>
+            <span class="tag tag-special">Regional IBT</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">6–8 (senior/middle)</span></div>
+          <div class="info-row"><span class="label">Specialty:</span><span class="value">Regional IBT — International Business &amp; Technology Program</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">Cawthra Park SS or Port Credit SS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (Gr 6–8)</span>
+          </div>
+        </div>
+        <div class="card-notes">Lakeview's main middle school. Hosts PDSB's Regional IBT Program — open to all eligible students.</div>
+        <div class="card-links">
+          <a href="https://allanamartin.peelschools.org/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. GREGORY CES (reference — DPCDSB FI) -->
+      <div class="school-card board-catholic" data-nbhd="Port Credit Mineola Lakeview" data-board="catholic" data-program="fi english" data-level="Elementary" data-fraser="7.9">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Gregory Catholic Elementary (reference — nearest DPCDSB FI)</div>
+          <div class="school-nbhd">West Mississauga · 1075 Swinbourne Drive, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-catholic">DPCDSB</span>
+            <span class="tag tag-fi">French Immersion</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8 (full FI Gr 1–8)</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">Grade 1 (no busing)</span></div>
+          <div class="info-row"><span class="label">Distance:</span><span class="value">~15 km from Port Credit</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 7.9 / 10</span>
+            <span class="fraser-badge fraser-good">#392 / 3,052</span>
+          </div>
+        </div>
+        <div class="card-notes">Closest full DPCDSB FI school to south Mississauga. No DPCDSB FI site is in Port Credit / Mineola / Lakeview. Listed here for Catholic families exploring French Immersion.</div>
+        <div class="card-links">
+          <a href="http://www3.dpcdsb.org/GREGO" target="_blank" rel="noopener">Official site →</a>
+          <a href="https://www.dpcdsb.org/download/543889" target="_blank" rel="noopener">DPCDSB FI list (PDF) →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================== -->
+  <!-- REGION 2: SOUTH ETOBICOKE                                -->
+  <!-- ====================================================== -->
+  <section>
+    <div class="region-header">
+      <h2>South Etobicoke — Long Branch · Mimico · Alderwood · New Toronto · Mimico-Queensway <span class="board-tag">TDSB &amp; TCDSB</span></h2>
+      <p>TDSB French Immersion entry is Senior Kindergarten, applied for in November. All on-time applicants get a program spot — but not necessarily their preferred school. Middle FI entry at Grade 4 applies in January.</p>
+    </div>
+    <div class="card-grid">
+
+      <!-- JOHN ENGLISH JMS -->
+      <div class="school-card board-public" data-nbhd="Mimico New Toronto" data-board="public" data-program="fi english" data-level="Elementary" data-fraser="7.6">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">John English Junior Middle School ⭐</div>
+          <div class="school-nbhd">Mimico / New Toronto · 95 Mimico Avenue, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-fi">Early FI + Middle FI</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early) or Gr 4 (Middle)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~795–900</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 7.6 / 10</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 81 · W 62 · M 71</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 84 · W 82 · M 60</span></div>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Primary FI hub for the south-lakeshore corridor. Housed in former Mimico High School building. Strong community engagement.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/johnenglish" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- SECOND STREET JMS -->
+      <div class="school-card board-public" data-nbhd="New Toronto Long Branch" data-board="public" data-program="fi english" data-level="Elementary" data-fraser="4.7">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Second Street Junior Middle School</div>
+          <div class="school-nbhd">New Toronto / Long Branch · 71 Second Street, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-fi">Early FI + Middle FI</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early) or Gr 4 (Middle)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~560</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-low">Fraser 4.7 / 10</span>
+            <span class="fraser-badge fraser-low">#2,337 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 81 · W 67 · M 54</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 88 · W 88 · M 38</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Solid Gr 3 results but Gr 6 math (38%) drags composite. Summer school programming on site.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/secondstreet" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- NORSEMAN JMS -->
+      <div class="school-card board-public" data-nbhd="Mimico-Queensway Alderwood" data-board="public" data-program="fi english" data-level="Elementary" data-fraser="8.1">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Norseman Junior Middle School ⭐</div>
+          <div class="school-nbhd">Mimico-Queensway / Alderwood · 105 Norseman Street, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-fi">Early FI</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early FI)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~860</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 8.1 / 10</span>
+            <span class="fraser-badge fraser-good">#313 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 82 · W 60 · M 65</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 93 · W 94 · M 67</span></div>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Highest-rated TDSB FI school in the area. Exceptional Gr 6 literacy. Partnership with Karen Kain (blended choir).</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/norseman" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. LEO CS (TCDSB) -->
+      <div class="school-card board-catholic" data-nbhd="Mimico New Toronto" data-board="catholic" data-program="fi english" data-level="Elementary" data-fraser="7.5">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Leo Catholic School ⭐</div>
+          <div class="school-nbhd">Mimico / New Toronto · 271 Royal York Road, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-catholic">TCDSB</span>
+            <span class="tag tag-fi">Early FI</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early FI)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~405</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 7.5 / 10</span>
+            <span class="fraser-badge fraser-good">#589 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 85 · W 77 · M 74</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 96 · W 90 · M 73</span></div>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Best-performing accessible FI school by EQAO. New permanent building (2025). Gr 6 math 73% — well above provincial 51%.</div>
+        <div class="card-links">
+          <a href="https://www.tcdsb.org/o/stleo" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. LOUIS CS (TCDSB) -->
+      <div class="school-card board-catholic" data-nbhd="Mimico-Queensway" data-board="catholic" data-program="fi english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Louis Catholic School</div>
+          <div class="school-nbhd">Mimico-Queensway · 11 Morgan Avenue, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-catholic">TCDSB</span>
+            <span class="tag tag-fi">Early FI</span>
+            <span class="tag tag-gifted">Gifted</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early FI)</span></div>
+          <div class="info-row"><span class="label">Specialty:</span><span class="value">Triple-track: FI, Gifted, English</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser not confirmed</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 79 · W 74 · M 81</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 100 · W 82 · M 43</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Rare triple-track school. Gr 6 reading at 100%. Relatively small (~305 students).</div>
+        <div class="card-links">
+          <a href="https://www.tcdsb.org/schools/stlouis/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ÉC MICHELINE-SAINT-CYR (Viamonde) -->
+      <div class="school-card board-fr-public" data-nbhd="Long Branch Alderwood" data-board="fr-public" data-program="full-fr" data-level="Elementary" data-fraser="7.5">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">École élémentaire Micheline-Saint-Cyr ⭐</div>
+          <div class="school-nbhd">Long Branch / Alderwood · 85 Forty First Street, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-fr-pub">CS Viamonde</span>
+            <span class="tag tag-full-fr">Full French-Lang.</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">Admission:</span><span class="value">Charter §23 eligibility</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~235 · Garderie on site</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 7.5 / 10</span>
+            <span class="fraser-badge fraser-good">#589 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 96 · W 85 · M 100</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 81 · W 85 · M 62</span></div>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Among the strongest EQAO results in south Etobicoke. Not French Immersion — a French-language school for francophone families.</div>
+        <div class="card-links">
+          <a href="https://csviamonde.ca/nos-ecoles/trouver-une-ecole/fiche-ecole/ecole-elementaire-micheline-saint-cyr" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ÉÉC SAINTE-MARGUERITE-D'YOUVILLE (MonAvenir) -->
+      <div class="school-card board-fr-catholic" data-nbhd="Mimico New Toronto" data-board="fr-catholic" data-program="full-fr" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">ÉÉC Sainte-Marguerite-d'Youville ⭐</div>
+          <div class="school-nbhd">Mimico / New Toronto · 755 Royal York Road, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-fr-cath">CSC MonAvenir</span>
+            <span class="tag tag-full-fr">Full French-Lang.</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">Admission:</span><span class="value">Charter §23 + Catholic affiliation</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~295 · Garderie on site</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser not confirmed</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 96 · W 91 · M 93</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 100 · W 92 · M 68</span></div>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Outstanding EQAO across all subjects — among the highest in Etobicoke. Francophone Catholic school.</div>
+        <div class="card-links">
+          <a href="https://cscmonavenir.ca/ecoles/ecole-elementaire-catholique-sainte-marguerite-dyouville/" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- Non-FI TDSB schools -->
+
+      <!-- SEVENTH STREET JS -->
+      <div class="school-card board-public" data-nbhd="New Toronto" data-board="public" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Seventh Street Junior School</div>
+          <div class="school-nbhd">New Toronto · 101 Seventh Street, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–5 (feeds Second Street JMS)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~185 · attached childcare</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (JK–5 only)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25 Grade 3</div>
+            <div class="eqao-row"><span class="eqao-grade">R / W / M</span><span class="eqao-scores">74 · 81 · 63</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Small diverse community (16 countries, 19 languages). Strong Gr 3 writing.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/seventhstreet" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- DAVID HORNELL JS -->
+      <div class="school-card board-public" data-nbhd="Mimico" data-board="public" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">David Hornell Junior School</div>
+          <div class="school-nbhd">Mimico · 32 Victoria Street, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–5</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~230</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (JK–5 only)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25 Grade 3</div>
+            <div class="eqao-row"><span class="eqao-grade">R / W / M</span><span class="eqao-scores">76 · 68 · 60</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Named after Mimico's WWII Victoria Cross recipient. Lakeside community school.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/davidhornell" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- PARK LAWN JMS -->
+      <div class="school-card board-public" data-nbhd="Mimico-Queensway" data-board="public" data-program="english" data-level="Elementary" data-fraser="7.4">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Park Lawn Junior Middle School</div>
+          <div class="school-nbhd">Mimico-Queensway / Stonegate · 71 Ballacaine Drive, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-good">Fraser 7.4 / 10</span>
+            <span class="fraser-badge fraser-good">#643 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 64 · W 58 · M 50</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 99 · W 94 · M 62</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Large Gr 3→Gr 6 improvement arc. Gr 6 reading 99% — among highest in area.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/parklawn" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- JAMES S BELL JMS -->
+      <div class="school-card board-public" data-nbhd="Long Branch Alderwood" data-board="public" data-program="english" data-level="Elementary" data-fraser="5.2">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">James S. Bell Junior Middle School</div>
+          <div class="school-nbhd">Long Branch / Alderwood · 90 Thirty First Street, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+            <span class="tag tag-special">Sports &amp; Wellness</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">Specialty:</span><span class="value">Sports &amp; Wellness Academy</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-med">Fraser 5.2 / 10</span>
+            <span class="fraser-badge fraser-med">#2,090 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 74 · W 52 · M 56</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 92 · W 94 · M 55</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Integrated health &amp; active living curriculum. Strong Gr 6 literacy, improving trend.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/jamesbell" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- LANOR JMS -->
+      <div class="school-card board-public" data-nbhd="Alderwood Long Branch" data-board="public" data-program="english" data-level="Elementary" data-fraser="5.8">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Lanor Junior Middle School ⭐</div>
+          <div class="school-nbhd">Alderwood · 450 Lanor Avenue, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+            <span class="tag tag-special">STEAM Centre</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-med">Fraser 5.8 / 10</span>
+            <span class="fraser-badge fraser-med">#1,703 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 91 · W 95 · M 68</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 93 · W 77 · M 51</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Designated STEAM centre. Exceptional Gr 3 literacy (95% writing). Strong upward 3-year trend.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/lanor" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- KAREN KAIN (Arts, 6–8) -->
+      <div class="school-card board-public" data-nbhd="Mimico-Queensway" data-board="public" data-program="arts" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Karen Kain School of the Arts</div>
+          <div class="school-nbhd">Stonegate-Queensway · 60 Berl Avenue, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-arts">Integrated Arts</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">6–8 only</span></div>
+          <div class="info-row"><span class="label">Admission:</span><span class="value">Application + audition/portfolio</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">Etobicoke School of the Arts (HS)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (Gr 6–8)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25 Grade 6</div>
+            <div class="eqao-row"><span class="eqao-grade">R / W / M</span><span class="eqao-scores">91 · 91 · 39</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Dance · Drama · Visual · Vocal · Media Arts. Partnerships with National Ballet, AGO, ROM, TSO, Stratford. Not FI.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/karenkain" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================== -->
+  <!-- REGION 3: CENTRAL ETOBICOKE                              -->
+  <!-- ====================================================== -->
+  <section>
+    <div class="region-header">
+      <h2>Central Etobicoke — Richmond Gardens · Royal York Gardens · Princess–Rosethorn <span class="board-tag">TDSB &amp; TCDSB</span></h2>
+      <p>FI families in this zone typically attend Rosethorn JS (JK–5, FI only) or Islington JMS (dual-track JK–8). English-stream students attend their catchment JS and continue to John G. Althouse MS (Gr 6–8).</p>
+    </div>
+    <div class="card-grid">
+
+      <!-- ROSETHORN JS -->
+      <div class="school-card board-public" data-nbhd="Princess-Rosethorn Richmond Gardens Royal York Gardens" data-board="public" data-program="fi" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Rosethorn Junior School ⭐</div>
+          <div class="school-nbhd">Princess-Rosethorn · 2 Remington Drive, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-fi">Early FI (FI only)</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–5 (100% FI — no English stream)</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early FI)</span></div>
+          <div class="info-row"><span class="label">Feeds to:</span><span class="value">Hilltop MS or John G. Althouse MS</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (JK–5 only)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25 Grade 3</div>
+            <div class="eqao-row"><span class="eqao-grade">R / W / M</span><span class="eqao-scores">64 · 64 · 66</span></div>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Full FI-only school (no English stream). Naturalized schoolyard, on-site daycare. ~315 students.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/rosethorn" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ISLINGTON JMS -->
+      <div class="school-card board-public" data-nbhd="Royal York Gardens Richmond Gardens" data-board="public" data-program="fi english" data-level="Elementary" data-fraser="5.4">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Islington Junior Middle School</div>
+          <div class="school-nbhd">Islington Village · 44 Cordova Avenue, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-fi">Early FI</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early FI)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~725 · 2nd oldest school in Toronto (1832)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-med">Fraser 5.4 / 10</span>
+            <span class="fraser-badge fraser-med">#1,964 / 3,052</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 62 · W 61 · M 62</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 84 · W 83 · M 41</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Out-of-area applications CLOSED for 2026–27 (high demand). Historic school in Islington Village.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/islington" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- OUR LADY OF PEACE (TCDSB) -->
+      <div class="school-card board-catholic" data-nbhd="Richmond Gardens Royal York Gardens" data-board="catholic" data-program="fi" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Our Lady of Peace Catholic School</div>
+          <div class="school-nbhd">Central Etobicoke · 70 Mattice Avenue, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-catholic">TCDSB</span>
+            <span class="tag tag-fi">Full FI (JK–8)</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–8</span></div>
+          <div class="info-row"><span class="label">FI entry:</span><span class="value">JK (Early FI)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~545</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser not confirmed</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25</div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 3</span><span class="eqao-scores">R 69 · W 69 · M 60</span></div>
+            <div class="eqao-row"><span class="eqao-grade">Grade 6</span><span class="eqao-scores">R 84 · W 84 · M 60</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Designated TCDSB FI site for several central Etobicoke catchments. Full FI JK–8.</div>
+        <div class="card-links">
+          <a href="https://www.tcdsb.org/o/ourladyofpeace" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- PRINCESS MARGARET JS -->
+      <div class="school-card board-public" data-nbhd="Princess-Rosethorn" data-board="public" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Princess Margaret Junior School</div>
+          <div class="school-nbhd">Princess-Rosethorn · 65 Tromley Drive, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–5 (feeds John G. Althouse MS)</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~380</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (JK–5 only)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25 Grade 3</div>
+            <div class="eqao-row"><span class="eqao-grade">R / W / M</span><span class="eqao-scores">72 · 47 · 61</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Family-oriented community school near Martin Grove &amp; Eglinton. Gr 3 writing (47%) is below provincial average — watch the 3-yr trend.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/princessmargaret" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- WEDGEWOOD JS -->
+      <div class="school-card board-public" data-nbhd="Richmond Gardens" data-board="public" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Wedgewood Junior School ⭐</div>
+          <div class="school-nbhd">Richmond Gardens / Eatonville · 5 Swan Avenue, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–5</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~510 · 32 home languages</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (JK–5 only)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25 Grade 3</div>
+            <div class="eqao-row"><span class="eqao-grade">R / W / M</span><span class="eqao-scores">80 · 80 · 76</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Strong Gr 3 scores all well above provincial averages. Very diverse school community.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/wedgewoodjs" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. GEORGE'S JS -->
+      <div class="school-card board-public" data-nbhd="Princess-Rosethorn" data-board="public" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. George's Junior School ⭐</div>
+          <div class="school-nbhd">Princess-Rosethorn · 70 Princess Anne Crescent, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+            <span class="tag tag-special">ISP – Primary Autism</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK–5</span></div>
+          <div class="info-row"><span class="label">Enrolment:</span><span class="value">~175 (small community)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (JK–5 only)</span>
+          </div>
+          <div class="eqao">
+            <div class="eqao-label">EQAO 2024–25 Grade 3</div>
+            <div class="eqao-row"><span class="eqao-grade">R / W / M</span><span class="eqao-scores">83 · 78 · 83</span></div>
+          </div>
+        </div>
+        <div class="card-notes">Excellent Gr 3 scores. Includes Intensive Support Program for Primary Autism. Nursery school on-site.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/stgeorges" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- JOHN G. ALTHOUSE MS -->
+      <div class="school-card board-public" data-nbhd="Princess-Rosethorn Richmond Gardens Royal York Gardens" data-board="public" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">John G. Althouse Middle School</div>
+          <div class="school-nbhd">Central Etobicoke · 130 Lloyd Manor Road, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-public">TDSB</span>
+            <span class="tag tag-english">English Track</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">6–8</span></div>
+          <div class="info-row"><span class="label">Role:</span><span class="value">Main feeder MS for Princess Margaret, St. George's, Rosethorn (Eng. stream)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/A (Gr 6–8)</span>
+          </div>
+        </div>
+        <div class="card-notes">Key Gr 6–8 destination for Princess-Rosethorn families.</div>
+        <div class="card-links">
+          <a href="https://schoolweb.tdsb.on.ca/johngalthouse" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================== -->
+  <!-- REGION 4: PRIVATE SCHOOLS                                -->
+  <!-- ====================================================== -->
+  <section>
+    <div class="region-header">
+      <h2>Premium Private Schools — West GTA <span class="board-tag">Private · JK–8</span></h2>
+      <p>French-first, bilingual, IB and premium English-track options within a realistic commute of all target neighbourhoods. Tuition is approximate (2024–25 / 2025–26).</p>
+    </div>
+    <div class="card-grid">
+
+      <!-- TFS WEST -->
+      <div class="school-card board-private" data-nbhd="Port Credit Lakeview" data-board="private" data-program="fi" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">TFS West Campus (Mississauga) ⭐</div>
+          <div class="school-nbhd">Port Credit / Lakeview · 1293 Meredith Avenue, Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-fi">French-First Bilingual</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">Pre-K – Grade 7 (feeds TFS Toronto for 8–12)</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$24,645 – $35,520 (+ one-time $4,500 reg.)</span></div>
+          <div class="info-row"><span class="label">Co-ed:</span><span class="value">Yes · Secular</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Closest true French-first private school to Port Credit / Mineola / Lakeview. ~5–10 min drive. IB continuum via main TFS campus.</div>
+        <div class="card-links">
+          <a href="https://www.tfs.ca" target="_blank" rel="noopener">Official site →</a>
+          <a href="https://www.tfs.ca/admissions/tuition-and-fees" target="_blank" rel="noopener">Tuition →</a>
+        </div>
+      </div>
+
+      <!-- TFS TORONTO -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="fi ib" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">TFS Toronto Campus ⭐</div>
+          <div class="school-nbhd">Lawrence Park · 306 Lawrence Avenue E, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-fi">French-First Bilingual</span>
+            <span class="tag tag-ib">Full IB (PYP/MYP/DP)</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">Age 2 – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$35,380 – $45,140 (+ one-time $10,000 reg.)</span></div>
+          <div class="info-row"><span class="label">Distance:</span><span class="value">~20 min from Etobicoke · ~25–30 min from Port Credit</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Canada's most recognized French-bilingual independent school. Full IB continuum. Exceptional global mobility value.</div>
+        <div class="card-links">
+          <a href="https://www.tfs.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- LYCÉE FRANÇAIS -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="full-fr" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Lycée Français de Toronto</div>
+          <div class="school-nbhd">Midtown Toronto · 2327 Dufferin Street, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-full-fr">Full French (Bac)</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK (Maternelle) – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$19,300 – $24,000 (+ one-time ~$4,000 enrolment)</span></div>
+          <div class="info-row"><span class="label">Distance:</span><span class="value">~15 min from Central Etobicoke · ~25 min from Port Credit</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Most affordable premium French-first option. French National Curriculum (accredited by France). Ideal for francophone or Europe-bound families. Dual Bac + OSSD possible.</div>
+        <div class="card-links">
+          <a href="https://www.lft.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- KINGSWAY COLLEGE SCHOOL (KCS) -->
+      <div class="school-card board-private" data-nbhd="Richmond Gardens Royal York Gardens Princess-Rosethorn Mimico Alderwood Long Branch" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Kingsway College School (KCS) ⭐</div>
+          <div class="school-nbhd">The Kingsway · 4600 Dundas Street W, Etobicoke</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-english">English · Progressive</span>
+            <span class="tag tag-special">CAIS Accredited</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 8 (Senior 9–12 on Lake Shore Blvd W)</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$33,995 – $36,750 (incl. trips, clubs, instruments)</span></div>
+          <div class="info-row"><span class="label">Distance:</span><span class="value">5–10 min Central Etob. · 15–20 min South Etob./Port Credit</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Top choice for Central Etobicoke families. "Four Doors to Learning" program. CAIS accreditation (institutional quality on par with UCC/Havergal). Senior School at Lake Shore opened 2021.</div>
+        <div class="card-links">
+          <a href="https://www.kcs.on.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- MENTOR COLLEGE -->
+      <div class="school-card board-private" data-nbhd="Port Credit Mineola Lakeview" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Mentor College ⭐</div>
+          <div class="school-nbhd">Port Credit · 56 Cayuga Ave (Primary) · 40 Forest Ave (Main), Mississauga</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-english">English · University Prep</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$20,530 – $23,670 (all-inclusive)</span></div>
+          <div class="info-row"><span class="label">Distance:</span><span class="value">5–10 min Port Credit/Mineola/Lakeview</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes"><span class="star">★</span>Best-value premium school in the Port Credit corridor. Indoor pool, turf field, dome, labs. Muskoka Outdoor Education Centre. Strong parent communication.</div>
+        <div class="card-links">
+          <a href="https://www.mentorcollege.edu" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- HUMBERSIDE MONTESSORI -->
+      <div class="school-card board-private" data-nbhd="Richmond Gardens Royal York Gardens Princess-Rosethorn" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Humberside Montessori School</div>
+          <div class="school-nbhd">High Park / Roncesvalles · 121 Kennedy Avenue, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-special">AMI Montessori</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">Casa (2.5) – Grade 8 (Adolescent)</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$18,500 – $19,900</span></div>
+          <div class="info-row"><span class="label">Distance:</span><span class="value">~10 min Central Etob. · ~20 min South Etob.</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">AMI-accredited (gold standard) authentic Montessori. Most affordable premium option. ~250 students. Transit via Bloor line.</div>
+        <div class="card-links">
+          <a href="https://www.humbersidemontessori.com" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ROTHERGLEN -->
+      <div class="school-card board-private" data-nbhd="Port Credit Lakeview Alderwood Long Branch" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Rotherglen School</div>
+          <div class="school-nbhd">Oakville &amp; Meadowvale (Mississauga) campuses</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-special">Montessori → Enriched</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">Casa – Grade 8</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$18,775 – $26,760 (Oakville); Mississauga slightly lower</span></div>
+          <div class="info-row"><span class="label">Distance:</span><span class="value">25 min Port Credit → Oakville · 20–25 min to Meadowvale campus</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Montessori early years → enriched Ontario curriculum. Max class 18; 10:1 ratio. Before/after care 7:30–6:00.</div>
+        <div class="card-links">
+          <a href="https://www.rotherglen.com" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- MACLACHLAN COLLEGE -->
+      <div class="school-card board-private" data-nbhd="Port Credit Lakeview" data-board="private" data-program="ib" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">MacLachlan College</div>
+          <div class="school-nbhd">Oakville</div>
+          <div class="tags">
+            <span class="tag tag-private">Private</span>
+            <span class="tag tag-ib">IB PYP (JK–6)</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 12 (IB PYP JK–6)</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$24,515 – $30,400</span></div>
+          <div class="info-row"><span class="label">Co-ed:</span><span class="value">Yes</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Co-ed IB — relatively rare in the west GTA. Strong option for families wanting IB from JK.</div>
+        <div class="card-links">
+          <a href="https://www.maclachlan.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- LINBROOK (BOYS) -->
+      <div class="school-card board-private" data-nbhd="Port Credit Lakeview" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Linbrook School (Boys)</div>
+          <div class="school-nbhd">Oakville</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Boys only</span>
+            <span class="tag tag-english">English</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 8</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$28,600 – $33,850</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Boys-only JK–8 option in Oakville. Feeds into Appleby or other senior schools.</div>
+        <div class="card-links">
+          <a href="https://www.linbrookschool.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. MILDRED'S-LIGHTBOURN (GIRLS) -->
+      <div class="school-card board-private" data-nbhd="Port Credit Lakeview" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Mildred's-Lightbourn School (Girls)</div>
+          <div class="school-nbhd">Oakville</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Girls only</span>
+            <span class="tag tag-english">English</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$25,180 – $31,145 (incl. hot lunch)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Girls-only JK–12 in Oakville. Hot lunch included. Established girls' school.</div>
+        <div class="card-links">
+          <a href="https://www.smls.on.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- BRANKSOME HALL (GIRLS IB) -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="ib" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Branksome Hall (Girls)</div>
+          <div class="school-nbhd">Rosedale, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Girls only</span>
+            <span class="tag tag-ib">Full IB (JK–12)</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$40,940 – $45,140</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Canada's only all-girls full IB continuum school. International reputation.</div>
+        <div class="card-links">
+          <a href="https://www.branksome.on.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- BISHOP STRACHAN (GIRLS) -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Bishop Strachan School (Girls)</div>
+          <div class="school-nbhd">Forest Hill, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Girls only</span>
+            <span class="tag tag-english">English</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$43,800</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">One of Canada's oldest independent girls' schools (founded 1867).</div>
+        <div class="card-links">
+          <a href="https://www.bss.on.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- HAVERGAL (GIRLS) -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Havergal College (Girls)</div>
+          <div class="school-nbhd">Lawrence Park, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Girls only</span>
+            <span class="tag tag-english">English</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$41,520 – $45,670</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Premier Canadian girls' school. Strong university placement.</div>
+        <div class="card-links">
+          <a href="https://www.havergal.on.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- STERLING HALL (BOYS) -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">Sterling Hall School (Boys)</div>
+          <div class="school-nbhd">Midtown West, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Boys only</span>
+            <span class="tag tag-english">English</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 8</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$39,500 (flat rate)</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Flat-rate JK–8 boys school. Strong feeder to UCC, Crescent, SAC.</div>
+        <div class="card-links">
+          <a href="https://www.sterlinghall.com" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- THE YORK SCHOOL (IB) -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="ib" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">The York School</div>
+          <div class="school-nbhd">Yonge / St. Clair, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Co-ed</span>
+            <span class="tag tag-ib">Full IB (JK–12)</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">JK – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$40,350 – $42,700</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Co-ed full IB continuum in central Toronto.</div>
+        <div class="card-links">
+          <a href="https://www.yorkschool.com" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+      <!-- ST. CLEMENT'S (GIRLS) -->
+      <div class="school-card board-private" data-nbhd="Central" data-board="private" data-program="english" data-level="Elementary" data-fraser="0">
+        <div class="card-top"></div>
+        <div class="card-body">
+          <div class="school-name">St. Clement's School (Girls)</div>
+          <div class="school-nbhd">Yonge / Eglinton, Toronto</div>
+          <div class="tags">
+            <span class="tag tag-private">Private · Girls only</span>
+            <span class="tag tag-english">English</span>
+          </div>
+          <div class="info-row"><span class="label">Grades:</span><span class="value">Grade 1 – Grade 12</span></div>
+          <div class="info-row"><span class="label">Tuition:</span><span class="value">~$41,900</span></div>
+          <div class="fraser-row">
+            <span class="fraser-badge fraser-na">Fraser N/R (private)</span>
+          </div>
+        </div>
+        <div class="card-notes">Girls-only premium school, Grade 1 entry.</div>
+        <div class="card-links">
+          <a href="https://www.scs.on.ca" target="_blank" rel="noopener">Official site →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="no-results">
+    No schools match your current filters. Try adjusting the neighbourhood, school type, program, or Fraser rating threshold.
+  </div>
+
+</main>
+
+<section class="compliance-section" aria-label="Legal Notice and Disclaimer">
+  <div class="legal">
+    <div class="eyebrow">Legal Notice &amp; Disclaimer</div>
+    <p><strong>General Information Only.</strong> The contents of this guide are provided for general informational purposes only and do not constitute professional educational, legal, financial, immigration, or real estate advice. Nothing herein is intended to create a client-agent relationship, nor should it be relied upon as a substitute for advice from qualified professionals (including school board admissions offices, independent educational consultants, legal counsel, or registered real estate representatives).</p>
+    <p><strong>No Warranty.</strong> While reasonable efforts have been made to compile accurate and current information, no representation or warranty, express or implied, is given as to the accuracy, completeness, timeliness, reliability, or suitability of any information contained in this guide. School rankings, EQAO results, and Fraser Institute ratings referenced herein reflect publicly available data current as of the date of compilation and are subject to change without notice.</p>
+    <p><strong>Verification Required.</strong> School catchment areas, entry grades, program admission criteria, lottery procedures, tuition, uniform requirements, and program availability are determined by individual school boards and private institutions and are subject to change, often on an annual basis. Users <strong>must verify</strong> all information directly with the relevant school board or institution — including the Peel District School Board (PDSB), Dufferin-Peel Catholic District School Board (DPCDSB), Toronto District School Board (TDSB), Toronto Catholic District School Board (TCDSB), Conseil scolaire Viamonde, Conseil scolaire catholique MonAvenir, and any listed independent schools — before making any educational, residential, or financial decisions.</p>
+    <p><strong>Limitation of Liability.</strong> Neither Taleen Mirzayan nor RE/MAX Professionals Inc., Brokerage accepts any liability whatsoever for any loss, damage, cost, or expense, direct or indirect, arising from reliance on any information in this guide, including but not limited to admission outcomes, waitlist placements, curriculum changes, program discontinuation, or tuition adjustments. Use of this guide is at the user's sole risk.</p>
+    <p><strong>Third-Party Information and Links.</strong> Hyperlinks and references to third-party organizations, ranking services, and school boards are provided for convenience only. No endorsement is implied, and no responsibility is accepted for the content of third-party sources.</p>
+    <p><strong>Not a Solicitation.</strong> This communication is not intended to solicit clients currently under contract with another brokerage. If you are currently represented by another real estate professional, please disregard any implied offer of real estate services.</p>
+    <p style="margin-top:12px;">Information in this guide is current as of April 2026. Taleen Mirzayan, Broker · RE/MAX Professionals Inc., Brokerage · Registered under the <em>Trust in Real Estate Services Act, 2002</em>, and regulated by the Real Estate Council of Ontario (<a href="https://www.reco.on.ca" target="_blank" rel="noopener">RECO</a>).</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="col-agent">
+      <img src="logo-alt.svg" alt="Taleen Mirzayan" />
+      <div>
+        <div class="eyebrow">Prepared By</div>
+        <h4>Taleen Mirzayan, Broker</h4>
+        <p>RE/MAX Professionals Inc., Brokerage<br/>
+        1 East Mall Crescent<br/>
+        Toronto, ON M9B 6G8</p>
+        <p style="margin-top:8px;"><a href="tel:+14169856160">416.985.6160</a><br/>
+        <a href="https://taleenmirzayan.com" target="_blank" rel="noopener">taleenmirzayan.com</a><br/>
+        <a href="https://instagram.com/iamtaleen_" target="_blank" rel="noopener">@iamtaleen_</a></p>
+      </div>
+    </div>
+    <div class="col-sources">
+      <div class="eyebrow">Data Sources</div>
+      <h4>Research &amp; References</h4>
+      <p><a href="https://www.fraserinstitute.org/studies/report-card-ontarios-elementary-schools-2025" target="_blank" rel="noopener">Fraser Institute 2025 Report Card on Ontario's Elementary Schools</a><br/>
+      <a href="https://www.eqao.com" target="_blank" rel="noopener">EQAO — Education Quality and Accountability Office</a><br/>
+      <a href="https://ontarioschoolrankings.ca" target="_blank" rel="noopener">Ontario School Rankings</a><br/>
+      <a href="https://www.ourkids.net" target="_blank" rel="noopener">OurKids.net — Independent School Directory</a></p>
+      <p style="margin-top:8px;"><strong>School Boards:</strong> <a href="https://www.peelschools.org" target="_blank" rel="noopener">PDSB</a> · <a href="https://www.dpcdsb.org" target="_blank" rel="noopener">DPCDSB</a> · <a href="https://www.tdsb.on.ca" target="_blank" rel="noopener">TDSB</a> · <a href="https://www.tcdsb.org" target="_blank" rel="noopener">TCDSB</a> · <a href="https://csviamonde.ca" target="_blank" rel="noopener">CS Viamonde</a> · <a href="https://cscmonavenir.ca" target="_blank" rel="noopener">CSC MonAvenir</a></p>
+    </div>
+  </div>
+  <div class="footer-sources">
+    <p>&copy; 2026 Taleen Mirzayan, Broker · RE/MAX Professionals Inc., Brokerage · Independently owned and operated. Not intended to solicit clients currently under contract with another brokerage. RE/MAX&reg; and the RE/MAX Balloon are registered trademarks of RE/MAX, LLC.</p>
+  </div>
+</footer>
+
+<script>
+  function applyFilters() {
+    const nbhd = document.getElementById('filter-nbhd').value;
+    const board = document.getElementById('filter-board').value;
+    const program = document.getElementById('filter-program').value;
+    const fraserMin = parseFloat(document.getElementById('filter-fraser').value) || 0;
+    const search = document.getElementById('filter-search').value.toLowerCase();
+
+    const cards = document.querySelectorAll('.school-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardNbhds = (card.getAttribute('data-nbhd') || '').split(/\s+/);
+      const cardBoard = card.getAttribute('data-board');
+      const cardPrograms = (card.getAttribute('data-program') || '').split(/\s+/);
+      const cardFraser = parseFloat(card.getAttribute('data-fraser')) || 0;
+      const cardName = card.querySelector('.school-name').textContent.toLowerCase();
+
+      const matchesNbhd = (nbhd === 'all' || cardNbhds.includes(nbhd) || cardNbhds.includes('Central'));
+      const matchesBoard = (board === 'all' || cardBoard === board);
+      const matchesProgram = (program === 'all' || cardPrograms.includes(program));
+      const matchesFraser = (fraserMin === 0 || cardFraser >= fraserMin);
+      const matchesSearch = (!search || cardName.includes(search));
+
+      if (matchesNbhd && matchesBoard && matchesProgram && matchesFraser && matchesSearch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    // Hide region sections that end up empty
+    document.querySelectorAll('main section').forEach(section => {
+      const hasVisible = section.querySelector('.school-card:not(.hidden)');
+      section.style.display = hasVisible ? '' : 'none';
+    });
+
+    const noResults = document.getElementById('no-results');
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+
+  function resetFilters() {
+    document.getElementById('filter-nbhd').value = 'all';
+    document.getElementById('filter-board').value = 'all';
+    document.getElementById('filter-program').value = 'all';
+    document.getElementById('filter-fraser').value = '0';
+    document.getElementById('filter-search').value = '';
+    applyFilters();
+  }
+</script>
+
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
